@@ -3,6 +3,8 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4eded;
+ 
+
 }
 
 nav {
@@ -243,8 +245,8 @@ section {
   justify-content: space-around;
   width: 350px; 
   height: 400px; 
-   display: inline-block; 
-  margin:  100px; 
+ display: inline-block; 
+  margin:  50px; 
 }
 
 
