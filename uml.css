@@ -26,18 +26,41 @@ section {
 #popular {
 }
 
+.uml {
+  position: relative;
+  color: #f1f1f1;
+}
 
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 4rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: fixed;
+  box-shadow: 0 0 10px rgba(244, 242, 242, 0.3);
+  color: white;
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom right, #ff006e, #ffbe0b);
+  background: #ff006e;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; 
+  background: linear-gradient(
+    to right,
+    #ff006e,
+    #ffbe0b
+  ); 
+  z-index: -1; 
+}
+svg {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
 }
 
 ul {
@@ -46,6 +69,24 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  color: white;
+  position: relative;
+}
+li a {
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  position:relative;
+  font-size: 20px;
+  letter-spacing: 0.64px;
+  line-height: 32px;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.icon svg {
+  display: inline-block;
+  justify-content: space-around;
 }
 .img {
   justify-content: start;
@@ -62,14 +103,6 @@ ul {
   mask: url("#mask");
 }
 
-.mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, #ff006e, #ffbe0b);
-}
 
 .box {
   width: 1656px;
@@ -82,9 +115,10 @@ ul {
   height: 800px;
   top: 0;
   left: 0;
+
 }
 
-.label .text-wrapper {
+.label .texto {
   position: absolute;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -97,9 +131,10 @@ ul {
   font-size: 28px;
   letter-spacing: 2.72px;
   line-height: 102px;
+
 }
 
-.label .selecciona-los {
+.label .text {
   position: absolute;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -114,7 +149,7 @@ ul {
   line-height: 44px;
 }
 
-.bottom-CTA {
+.bottom {
   position: absolute;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -129,9 +164,6 @@ ul {
   box-shadow: var(--shadow-calm-shadow-mood);
 }
 
-
-
-
 .vector {
   position: absolute;
   justify-content: flex-end;
@@ -140,12 +172,9 @@ ul {
   left: 250px;
   color: #ff7d0b;
   border-radius: 100px;
-
-
-
 }
 
-.label .mira-una-demostraci {
+.label .text-demo {
   position: absolute;
   justify-content: flex-end;
   flex-direction: row-reverse;
@@ -185,193 +214,212 @@ ul {
   border-radius: 24px;
   box-shadow: var(--shadow-calm-shadow-mood);
 }
+.curso {
+
+  width: 308px;
+  height: 400px;
+  top: 400px;
+  left: 950px;
+  background-color: #f1f1f1;
+  border-radius: 24px;
+  box-shadow: var(--shadow-calm-shadow-mood);
+}
+.curso1 {
+  width: 468px;
+  height: 300px;
+  top: 400px;
+  left: 500px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-calm-shadow-mood);
+}
 
 /* page 2*/
 
-.VENTAJAS {
-    position: relative;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    top: 0;
-    width: 1540px;
-    height: 720px;
+.page2 {
+  position: relative;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  top: 0;
+  width: 1540px;
+  height: 720px;
 }
 
-.VENTAJAS .ventajas-de-aprender {
-    position: absolute;
-    top: 92px;
-    left: 334px;
-    font-family: "Roboto-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #232323;
-    font-size: 44px;
-    letter-spacing: 1.76px;
-    line-height: 66px;
-    white-space: nowrap;
+.page2 .ventajas-de-aprender {
+  position: absolute;
+  top: 92px;
+  left: 334px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #232323;
+  font-size: 44px;
+  letter-spacing: 1.76px;
+  line-height: 66px;
+  white-space: nowrap;
 }
 
-.VENTAJAS .frame {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    position: absolute;
-    top: 322px;
-    left: 117px;
+.page2 .frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: absolute;
+  top: 322px;
+  left: 117px;
 }
 
-.VENTAJAS .group {
-    position: relative;
-    width: 361px;
-    height: 238.5px;
+.page2 .group {
+  position: relative;
+  width: 361px;
+  height: 238.5px;
 }
 
-.VENTAJAS .text-wrapper {
-    position: absolute;
-    width: 327px;
-    top: 110px;
-    left: 15px;
-    font-family: "Roboto-Medium", Helvetica;
-    font-weight: 500;
-    color: #343434;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0.96px;
-    line-height: 36px;
+.page2 .text-wrapper {
+  position: absolute;
+  width: 327px;
+  top: 110px;
+  left: 15px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #343434;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.96px;
+  line-height: 36px;
 }
 
-.VENTAJAS .purus-nibh-ultrices {
-    position: absolute;
-    width: 357px;
-    top: 174px;
-    left: 0;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #7a7a7a;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.64px;
-    line-height: 32px;
+.page2 .purus-nibh-ultrices {
+  position: absolute;
+  width: 357px;
+  top: 174px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.64px;
+  line-height: 32px;
 }
 
-.VENTAJAS .img-wrapper {
-    position: absolute;
-    width: 78px;
-    height: 78px;
-    top: 0;
-    left: 140px;
-    background-color: #ffffff;
-    border-radius: 39px;
-    box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009, 0px 11.89px 16.44px #0000000d,
-        10px 20.72px 33.62px #00000012, 10px 51px 94px #0000001c;
+.page2 .img-wrapper {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 0;
+  left: 140px;
+  background-color: #ffffff;
+  border-radius: 39px;
+  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009,
+    0px 11.89px 16.44px #0000000d, 10px 20.72px 33.62px #00000012,
+    10px 51px 94px #0000001c;
 }
 
-.VENTAJAS .icon-daily-analysis {
-    position: absolute;
-    width: 41px;
-    height: 24px;
-    top: 27px;
-    left: 18px;
+.page2 .icon-daily-analysis {
+  position: absolute;
+  width: 41px;
+  height: 24px;
+  top: 27px;
+  left: 18px;
 }
 
-.VENTAJAS .overlap-group-wrapper {
-    position: relative;
-    width: 392px;
-    height: 415px;
+.page2 .overlap-group-wrapper {
+  position: relative;
+  width: 392px;
+  height: 415px;
 }
 
-.VENTAJAS .overlap-group {
-    position: relative;
-    width: 580px;
-    height: 543px;
-    top: -39px;
-    left: -84px;
-    background-image: url(./img/rectangle-9.svg);
-    background-size: 100% 100%;
+.page2 .overlap-group {
+  position: relative;
+  width: 580px;
+  height: 543px;
+  top: -39px;
+  left: -84px;
+  background-image: url(./img/rectangle-9.svg);
+  background-size: 100% 100%;
 }
 
-.VENTAJAS .div {
-    position: relative;
-    width: 362px;
-    height: 238px;
-    top: 145px;
-    left: 101px;
+.page2 .div {
+  position: relative;
+  width: 362px;
+  height: 238px;
+  top: 145px;
+  left: 101px;
 }
 
-.VENTAJAS .text-wrapper-2 {
-    position: absolute;
-    width: 329px;
-    top: 110px;
-    left: 14px;
-    font-family: "Roboto-Medium", Helvetica;
-    font-weight: 500;
-    color: #343434;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0.96px;
-    line-height: 36px;
+.page2.text-wrapper-2 {
+  position: absolute;
+  width: 329px;
+  top: 110px;
+  left: 14px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #343434;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.96px;
+  line-height: 36px;
 }
 
-.VENTAJAS .p {
-    position: absolute;
-    width: 358px;
-    top: 174px;
-    left: 0;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #7a7a7a;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.64px;
-    line-height: 32px;
+.page2 .p {
+  position: absolute;
+  width: 358px;
+  top: 174px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.64px;
+  line-height: 32px;
 }
 
-.VENTAJAS .img {
-    position: absolute;
-    width: 31px;
-    height: 44px;
-    top: 18px;
-    left: 24px;
+.page2 .img {
+  position: absolute;
+  width: 31px;
+  height: 44px;
+  top: 18px;
+  left: 24px;
 }
 
-.VENTAJAS .group-2 {
-    position: relative;
-    width: 361px;
-    height: 238.5px;
-    margin-right: -4px;
+.page2 .group-2 {
+  position: relative;
+  width: 361px;
+  height: 238.5px;
+  margin-right: -4px;
 }
 
-.VENTAJAS .icon-lamp-smart-wrapper {
-    position: absolute;
-    width: 78px;
-    height: 78px;
-    top: 0;
-    left: 139px;
-    border-radius: 39px;
-    box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009, 0px 11.89px 16.44px #0000000d,
-        10px 20.72px 33.62px #00000012, 10px 51px 94px #0000001c;
+.page2 .icon-lamp-smart-wrapper {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 0;
+  left: 139px;
+  border-radius: 39px;
+  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009,
+    0px 11.89px 16.44px #0000000d, 10px 20.72px 33.62px #00000012,
+    10px 51px 94px #0000001c;
 }
 
-.VENTAJAS .elit-ut-arcu {
-    position: absolute;
-    width: 961px;
-    top: 183px;
-    left: 240px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #696969;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.8px;
-    line-height: 40px;
+.page2 .elit-ut-arcu {
+  position: absolute;
+  width: 961px;
+  top: 183px;
+  left: 240px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #696969;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 40px;
 }
-
 
 /* page 3*/
 
 .BLOQUE {
   position: relative;
-  top: 50% ;
+  top: 50%;
   width: 1440px;
   height: 1400px;
   overflow: hidden;
@@ -431,8 +479,9 @@ ul {
   width: 299px;
   height: 299px;
   border-radius: 12px;
-  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009, 0px 11.89px 16.44px #0000000d,
-      10px 20.72px 33.62px #00000012, 10px 51px 94px #0000001c;
+  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009,
+    0px 11.89px 16.44px #0000000d, 10px 20.72px 33.62px #00000012,
+    10px 51px 94px #0000001c;
 }
 
 .BLOQUE .image-2 {
@@ -443,8 +492,9 @@ ul {
   width: 299px;
   height: 299px;
   border-radius: 12px;
-  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009, 0px 11.89px 16.44px #0000000d,
-      10px 20.72px 33.62px #00000012, 10px 51px 94px #0000001c;
+  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009,
+    0px 11.89px 16.44px #0000000d, 10px 20.72px 33.62px #00000012,
+    10px 51px 94px #0000001c;
 }
 
 .BLOQUE .group-2 {
@@ -548,7 +598,11 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, rgb(255, 0, 110) 0%, rgb(255, 190, 11) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 0, 110) 0%,
+    rgb(255, 190, 11) 100%
+  );
   -webkit-background-clip: text !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -635,7 +689,7 @@ ul {
   box-shadow: var(--shadow-calm-shadow-mood);
 }
 
-.popular .image {
+.popular image {
   position: absolute;
   width: 482px;
   height: 303px;
@@ -706,8 +760,9 @@ ul {
   height: 28px;
   background-color: #ffffff;
   border-radius: 14px;
-  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009, 0px 11.89px 16.44px #0000000d,
-      10px 20.72px 33.62px #00000012, 10px 51px 94px #0000001c;
+  box-shadow: 0px 3.31px 3.32px #00000005, 0px 6.99px 8.21px #00000009,
+    0px 11.89px 16.44px #0000000d, 10px 20.72px 33.62px #00000012,
+    10px 51px 94px #0000001c;
 }
 
 .popular .vector {
@@ -744,7 +799,11 @@ ul {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  background: linear-gradient(180deg, rgb(255, 0, 110) 0%, rgb(255, 190, 11) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 0, 110) 0%,
+    rgb(255, 190, 11) 100%
+  );
   -webkit-background-clip: text !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -779,4 +838,279 @@ ul {
 }
 
 
+/* page 5*/
 
+.plan {
+  position: relative;
+  width: 1440px;
+  height: 1116px;
+  top: 150%;
+}
+
+.plan .choose-your-plan {
+  position: absolute;
+  top: 110px;
+  left: 532px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #232323;
+  font-size: 44px;
+  letter-spacing: 1.76px;
+  line-height: 66px;
+  white-space: nowrap;
+}
+
+.plan .morbi-ac-sit-vel {
+  position: absolute;
+  width: 921px;
+  top: 201px;
+  left: 260px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #696969;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+}
+
+.plan .group {
+  position: absolute;
+  width: 1116px;
+  height: 670px;
+  top: 340px;
+  left: 162px;
+}
+
+.plan .div {
+  position: absolute;
+  width: 286px;
+  height: 381px;
+  top: 145px;
+  left: 0;
+}
+
+.plan .img-wrapper {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 0;
+  left: 102px;
+  background-color: #ffffff;
+  border-radius: 39px;
+  box-shadow: var(--shadow-calm-shadow-mood);
+}
+
+.plan .icon-user-community {
+  position: absolute;
+  width: 37px;
+  height: 34px;
+  top: 20px;
+  left: 20px;
+}
+
+.plan .regular {
+  position: absolute;
+  top: 148px;
+  left: 97px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #343434;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.96px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.plan .learn-is-a-basic {
+  position: absolute;
+  width: 282px;
+  top: 219px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.64px;
+  line-height: 32px;
+}
+
+.plan .group-2 {
+  position: absolute;
+  width: 75px;
+  height: 59px;
+  top: 322px;
+  left: 106px;
+}
+
+.plan .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgb(67, 37, 235) 0%, rgb(241, 24, 24) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.plan .element {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: linear-gradient(180deg, rgb(118, 31, 231) 0%, rgb(243, 45, 45) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.plan .span {
+  color: #000000;
+}
+
+.plan .text-wrapper-2 {
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+}
+
+.plan .overlap-group-wrapper {
+  position: absolute;
+  width: 344px;
+  height: 670px;
+  top: 0;
+  left: 386px;
+}
+
+.plan .overlap-group {
+  position: relative;
+  width: 532px;
+  height: 810px;
+  top: -34px;
+  left: -84px;
+  background-image: url(./img/rectangle-9.svg);
+  background-size: 100% 100%;
+}
+
+.plan .group-3 {
+  position: relative;
+  width: 286px;
+  height: 482px;
+  top: 188px;
+  left: 115px;
+}
+
+.plan .frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 35px;
+  position: absolute;
+  top: 416px;
+  left: 61px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: var(--shadow-calm-shadow-mood);
+  background: linear-gradient(180deg, rgb(52, 19, 241) 0%, rgb(255, 11, 64) 100%);
+}
+
+.plan .join-now {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.plan .icon-agency {
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  top: 18px;
+  left: 20px;
+}
+
+.plan .agency {
+  position: absolute;
+  top: 148px;
+  left: 99px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #343434;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.96px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.plan .group-4 {
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  top: 322px;
+  left: 98px;
+}
+
+.plan .group-5 {
+  position: absolute;
+  width: 286px;
+  height: 390px;
+  top: 140px;
+  left: 834px;
+}
+
+.plan .icon-eye-check {
+  position: absolute;
+  width: 41px;
+  height: 31px;
+  top: 24px;
+  left: 18px;
+}
+
+.plan .private {
+  position: absolute;
+  top: 148px;
+  left: 100px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #343434;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.96px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.plan .group-6 {
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  top: 331px;
+  left: 98px;
+}
