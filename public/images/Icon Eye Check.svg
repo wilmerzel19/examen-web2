@@ -1,0 +1,16 @@
+<svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon Eye Check">
+<path id="Vector" d="M13.6923 16.6154L18.223 19.9477C18.384 20.0802 18.5724 20.1752 18.7747 20.2258C18.9769 20.2763 19.1879 20.2812 19.3923 20.24C19.5986 20.2013 19.7941 20.1186 19.9656 19.9975C20.1371 19.8765 20.2805 19.7199 20.3861 19.5385L31.2307 2" stroke="url(#paint0_linear_49_163)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M35.1769 10.7686C36.963 12.5631 38.5777 14.5203 40 16.6148C40 16.6148 31.4938 29.7686 21 29.7686C10.5062 29.7686 2 16.6148 2 16.6148C2 16.6148 10.5062 3.46094 21 3.46094" stroke="url(#paint1_linear_49_163)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_49_163" x1="16.6776" y1="24.0281" x2="44.379" y2="1.98261" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF006E"/>
+<stop offset="1" stop-color="#FFBE0B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_49_163" x1="8.4682" y1="35.1841" x2="48.7516" y2="-13.048" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF006E"/>
+<stop offset="1" stop-color="#FFBE0B"/>
+</linearGradient>
+</defs>
+</svg>
